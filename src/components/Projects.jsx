@@ -12,9 +12,11 @@ const Projects = () => {
       name: "Schedule Time App",
       description: "Aplicación de turnos medicos",
       repo: "https://www.google.com",
-      imagen1: Celular,
+      frame: Celular,
+      imagen1: ScrSTA1,
       imagen2: ScrSTA2,
       imagen3: ScrSTA3,
+      imagen4: ScrSTA4,
     },
     {
       name: "Rentable Inversor",
@@ -40,9 +42,14 @@ const Projects = () => {
               <div className="relative">
                 <Reveal delay={0.5} amount={0.3}>
                   <img
+                    src={project.frame}
+                    alt="Frame"
+                    className="h-[500px] object-cover"
+                  />
+                  <img
                     src={project.imagen1}
                     alt="imagen 1"
-                    className="h-[500px] object-cover"
+                    className="h-[385px] object-cover absolute top-[3px] left-[50px] z-[-1] rounded-3xl"
                   />
                   <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent"></div>
                 </Reveal>
