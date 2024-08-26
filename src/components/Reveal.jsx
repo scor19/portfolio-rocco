@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-const Reveal = ({ children, delay = 0.25, amount = 1 }) => {
+const Reveal = ({ children, delay = 0.25, amount = 0.75 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
     amount,

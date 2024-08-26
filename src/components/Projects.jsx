@@ -29,39 +29,51 @@ const Projects = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 mb-[200px] mb-[100px] w-full">
-      <div className="md:mx-auto justify-between max-w-5xl mx-2 items-center w-full">
-        <ul className="flex flex-col gap-4 font-bold">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className={`flex gap-4 border ${
-                index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-              }`}
-            >
-              <div className="relative">
-                <Reveal delay={0.5} amount={0.3}>
-                  <img
+    <div>
+      <Reveal>
+        <div className="md:mx-auto justify-between max-w-5xl mx-2 mb-4 items-center w-full">
+          <p className="text-xl font-[800] text-primary">Portafolio</p>
+        </div>
+      </Reveal>
+      <div className="container mx-auto px-4 mb-[200px] mb-[100px] w-full">
+        <div className="md:mx-auto justify-between max-w-5xl mx-2 items-center w-full">
+          <ul className="flex flex-col gap-4 font-bold">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className={`flex justify-between ${
+                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                }`}
+              >
+                <div className="relative pl-10">
+                  <Reveal delay={0.5} amount={0.3}>
+                    <img
                     src={project.frame}
                     alt="Frame"
                     className="h-[500px] object-cover"
                   />
                   <img
-                    src={project.imagen1}
-                    alt="imagen 1"
-                    className="h-[385px] object-cover absolute top-[3px] left-[50px] z-[-1] rounded-3xl"
-                  />
-                  <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent"></div>
-                </Reveal>
+                      src={project.imagen1}
+                      alt="imagen 1"
+                      className="h-[385px] object-cover absolute top-[3px] left-[50px] z-[-1] rounded-3xl"
+                    />
+                    <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent"></div>
+                  </Reveal>
+                </div>
+                <div className="flex flex-col items-center">
+                  <a
+                    href={project.link}
+                    className="md:text-2xl text-lg font-bold text-gray-700"
+                  >
+                    {project.name}
+                  </a>
+                  <p className="text-gray-500">{project.description}</p>
+                  <a href={project.repo}>Repositorio</a>
+                </div>
               </div>
-              <div className="flex flex-col">
-                <a href={project.link}>{project.name}</a>
-                <p className="text-gray-500">{project.description}</p>
-                <a href={project.repo}>Repositorio</a>
-              </div>
-            </div>
-          ))}
-        </ul>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
