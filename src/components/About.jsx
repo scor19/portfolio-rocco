@@ -14,8 +14,8 @@ const About = () => {
           <div className="lg:hidden block absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-white to-transparent"></div>
         </Reveal>
         <div className="flex flex-col justify-center md:justify-start w-full lg:pl-20">
-          <Reveal delay={0.5}>
-            <h1 className="text-xl font-[800] text-primary lg:pt-0 pt-4">
+          <Reveal delay={0.75}>
+            <h1 className="text-lg font-[800] text-primary lg:pt-0 pt-4">
               Sobre mi
             </h1>
             <p className="md:text-2xl text-lg font-bold text-gray-700 mb-4 mt-4">
