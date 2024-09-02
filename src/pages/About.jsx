@@ -1,5 +1,5 @@
 import pc2 from "../assets/pc2.webp";
-import Reveal from "./Reveal";
+import Reveal from "../components/Reveal";
 
 const About = () => {
   return (

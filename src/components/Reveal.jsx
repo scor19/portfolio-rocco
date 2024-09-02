@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
@@ -44,18 +45,15 @@ const Reveal = ({
       >
         {children}
       </motion.div>
-      {/* <motion.div
-        variants={{
-          hidden: { left: 0 },
-          visible: { left: "100%" },
-        }}
-        initial="hidden"
-        animate={slideControls}
-        transition={{ duration: 0.5, ease: "easeIn" }}
-        className="absolute top-4 bottom-4 right-0 left-0 w-full h-full bg-gradient-to-r from-[#00A8E8] via-[#00A8E8] to-transparent"
-      /> */}
     </div>
   );
+};
+
+Reveal.propTypes = {
+  children: PropTypes.node.isRequired,
+  delay: PropTypes.number,
+  amount: PropTypes.number,
+  direction: PropTypes.oneOf(["left", "right", "top", "bottom"]),
 };
 
 export default Reveal;

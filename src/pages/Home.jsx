@@ -1,18 +1,20 @@
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import Projects from "./Projects";
 import About from "./About";
-import AnimatedReactIcon from "./AnimatedReactIcon";
-import Reveal from "./Reveal";
-import AnimatedImage from "./AnimatedImage";
+import AnimatedReactIcon from "../components/AnimatedReactIcon";
+import Reveal from "../components/Reveal";
+import AnimatedImage from "../components/AnimatedImage";
+import Footer from "./Footer";
+import ScrollProgress from "../components/ScrollProgress";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import Fade from "./Fade";
-// import { motion } from "framer-motion";
+import Fade from "../components/Fade";
 
 const Home = () => {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
-      <section id="home" className="">
+      <section id="home" className="scroll-mt-32">
         <div className="flex md:flex-row flex-col md:mx-auto justify-between items-center max-w-5xl mx-2 md:my-[200px] my-[100px] md:px-6 px-2">
           <div>
             <Reveal>
@@ -26,7 +28,6 @@ const Home = () => {
                   Developer
                 </p>
               </Reveal>
-              {/* <FaReact size={40} className="text-[#00A8E8] md:ml-4" /> */}
               <div className="ml-4">
                 <Fade delay={0.75}>
                   <AnimatedReactIcon />
@@ -55,19 +56,17 @@ const Home = () => {
               </a>
             </div>
           </div>
-          {/* <img
-              src={rocco}
-              alt="gojo"
-              className=""
-            /> */}
           <AnimatedImage />
         </div>
       </section>
-      <section>
+      <section id="about" className="scroll-mt-[300px]">
         <About />
       </section>
-      <section>
+      <section id="projects" className="scroll-mt-[70px]">
         <Projects />
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
     </>
   );
