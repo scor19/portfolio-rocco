@@ -1,7 +1,3 @@
-¡Claro! Aquí tienes un ejemplo de un archivo `README.md` para tu proyecto de portafolio:
-
----
-
 # Portafolio Personal
 
 Este es mi portafolio personal, desarrollado para mostrar mis habilidades, proyectos y experiencia como desarrollador Full-Stack, con un enfoque en el desarrollo Front-End. El portafolio está diseñado para ser moderno, intuitivo y completamente responsive, asegurando una experiencia de usuario fluida en todos los dispositivos.
