@@ -2,6 +2,11 @@ import ScrSTA1 from "../assets/STA1.webp";
 import ScrSTA2 from "../assets/STA2.webp";
 import ScrSTA3 from "../assets/STA4.webp";
 import ScrSTA4 from "../assets/STA3.webp";
+import Cocktails1 from "../assets/Cocktails1.webp";
+import Cocktails2 from "../assets/Cocktails2.webp";
+import Cocktails3 from "../assets/Cocktails3.webp";
+import Cocktails4 from "../assets/Cocktails4.webp";
+import Cocktails5 from "../assets/Cocktails5.webp";
 import RentableInversor from "../assets/RentableInversor.webp";
 import Reveal from "../components/Reveal";
 import MockupWithCarousel from "../components/MockupWithCarousel";
@@ -13,11 +18,33 @@ const Projects = () => {
     {
       name: "Schedule Time App",
       description:
-        "Schedule Time App es una aplicación móvil diseñada para médicos que permite gestionar los turnos de sus pacientes. Con una interfaz intuitiva, facilita la organización de citas, el seguimiento del historial médico de cada paciente y la optimización del tiempo de consulta.",
-      stack: ["React Native", "MySQL", "Node.js", "Express", "JWT"],
-      repo: "https://www.google.com",
+        "Schedule Time App es una aplicación móvil diseñada para médicos que permite gestionar los turnos de sus pacientes. Con una interfaz intuitiva, facilita la organización de citas, el seguimiento del historial médico de cada paciente y la optimización del tiempo de consulta. Cuenta con una versión en Firebase y una en MySQL",
+      stack: [
+        "React Native",
+        "MySQL",
+        "Node.js",
+        "Express",
+        "JWT",
+        "Styled Components",
+      ],
+      repo: "https://github.com/scor19/simple-turn-app",
       demo: "",
       images: [ScrSTA1, ScrSTA2, ScrSTA3, ScrSTA4],
+      isMobile: true,
+    },
+    {
+      name: "Cocktails App",
+      description:
+        "Cocktails App es un proyecto personal que se realizó en React Native, utilizando TypeScript. Se utilizó la API de TheCocktailDB para obtener los datos de los diferentes tipos de bebidas, como ingredientes e instrucciones para prepararlos. Cuenta con una barra de busqueda y un filtro de bebidas según si contienen o no alcohol. También tiene una pestaña de favoritos, los cuales se guardan localmente en Async Storage.",
+      stack: [
+        "React Native",
+        "TypeScript",
+        "Async Storage",
+        "Styled Components",
+      ],
+      repo: "https://github.com/scor19/cocktails-react-native-expo",
+      demo: "",
+      images: [Cocktails1, Cocktails2, Cocktails3, Cocktails4, Cocktails5],
       isMobile: true,
     },
     {
@@ -96,7 +123,7 @@ const Projects = () => {
                     <p className="text-gray-500 text-md font-medium">
                       {project.description}
                     </p>
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 flex-wrap justify-center">
                       {project.stack.map((stack, index) => (
                         <p
                           key={index}

@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 const DRAG_BUFFER = 50;
 
 const ImageCarousel = ({ images }) => {
+  console.log("images: ", images);
   const dragConstraints = { left: 0, right: 0 };
 
   const [isDragging, setIsDragging] = useState(false);

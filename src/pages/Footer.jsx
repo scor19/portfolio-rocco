@@ -12,15 +12,15 @@ const Footer = () => {
 
   return (
     <Reveal>
-      <div className="footer flex justify-center items-center text-gray-800 w-full sm:px-[80px] px-2">
+      <div className="footer flex justify-center items-center text-gray-800 w-full sm:px-[80px] px-4">
         <div className="flex flex-col sm:flex-row lg:gap-[150px] gap-8 sm:my-24 mb-12">
           <div className="flex flex-col justify-center gap-4">
             <h1 className="text-4xl font-bold">Contactame</h1>
             <p className="text-gray-600">
-              Si te gusta mi trabajo,
+              Si te gusta mi trabajo, o tenés ideas para un proyecto,
               <br />
-              sentite libre de contactarme a traves de mis redes, o mediante
-              email
+              Sentite libre de contactarme a traves de mis redes, o mediante
+              email.
             </p>
             <ul className="gap-4 font-bold flex">
               <li>
@@ -50,7 +50,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="mail flex gap-4 sm:flex-row flex-col">
-            <div className="flex flex-col justify-center items-center bg-gray-700 sm:h-[200px] sm:w-[200px] rounded-tl-2xl rounded-br-2xl rounded-tr-[3px] shadow-md shadow-gray-800">
+            <div className="flex flex-col justify-center items-center bg-slate-700 sm:h-[200px] sm:w-[200px] rounded-tl-2xl rounded-br-2xl rounded-tr-[3px] shadow-md shadow-gray-800">
               <a
                 href="https://www.linkedin.com/in/rocco-bazo/"
                 target="_blank"
@@ -61,7 +61,7 @@ const Footer = () => {
                 <p className="text-gray-300">Rocco Bazo</p>
               </a>
             </div>
-            <div className="flex flex-col justify-center items-center bg-gray-700 sm:h-[200px] sm:w-[200px] rounded-tl-2xl rounded-br-2xl rounded-tr-[3px] shadow-md shadow-gray-800">
+            <div className="flex flex-col justify-center items-center bg-slate-700 sm:h-[200px] sm:w-[200px] rounded-tl-2xl rounded-br-2xl rounded-tr-[3px] shadow-md shadow-gray-800">
               <button
                 onClick={copyToClipboard}
                 className="flex flex-col justify-center items-center hover:scale-110 transition-all duration-300 hover:cursor-pointer"
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center text-gray-500">
+      <div className="text-center text-gray-500 bg-slate-800 py-4">
         <span>© 2024 Rocco Bazo</span>
       </div>
     </Reveal>
