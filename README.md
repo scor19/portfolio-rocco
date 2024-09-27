@@ -31,8 +31,8 @@ Este es mi portafolio personal, desarrollado para mostrar mis habilidades, proye
 1. **Clonar el repositorio:**
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-portafolio.git
-   cd tu-portafolio
+   git clone https://github.com/scor19/portfolio-rocco.git
+   cd portfolio-rocco
    ```
 
 2. **Instalar dependencias:**
