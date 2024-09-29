@@ -15,14 +15,14 @@ const Footer = () => {
       <div className="footer flex justify-center items-center text-gray-800 w-full sm:px-[80px] px-4">
         <div className="flex flex-col sm:flex-row lg:gap-[150px] gap-8 sm:my-24 mb-12">
           <div className="flex flex-col justify-center gap-4">
-            <h1 className="text-4xl font-bold">Contactame</h1>
-            <p className="text-gray-600">
+            <h1 className="text-4xl font-bold dark:text-white">Contactame</h1>
+            <p className="text-gray-600 dark:text-gray-400">
               Si te gusta mi trabajo, o tenés ideas para un proyecto,
               <br />
               Sentite libre de contactarme a traves de mis redes, o mediante
               email.
             </p>
-            <ul className="gap-4 font-bold flex">
+            <ul className="gap-4 font-bold flex items-center dark:text-white">
               <li>
                 <a
                   href="#home"
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center text-gray-500 bg-slate-800 py-4">
+      <div className="text-center text-gray-500 bg-slate-800 py-4 dark:text-gray-400">
         <span>© 2024 Rocco Bazo</span>
       </div>
     </Reveal>

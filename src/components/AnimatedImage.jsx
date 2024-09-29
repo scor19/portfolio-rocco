@@ -10,7 +10,7 @@ const AnimatedImage = () => {
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="md:w-[300px] w-[300px] border-8 rounded-full overflow-hidden"
+        className="md:w-[300px] w-[300px] border-8 rounded-full overflow-hidden dark:border-gray-800 duration-300"
       />
     </div>
   );

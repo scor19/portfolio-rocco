@@ -74,7 +74,7 @@ const Projects = () => {
       <Reveal amount={0.5}>
         <div className="container px-4 mb-[50px] mx-auto max-w-5xl">
           <p className="text-lg font-[800] text-primary mb-2">Portafolio</p>
-          <p className="text-xl font-[700] text-gray-700">
+          <p className="text-xl font-[700] text-gray-700 dark:text-white">
             Cada proyecto es una oportunidad de aprendizaje
           </p>
         </div>
@@ -114,23 +114,23 @@ const Projects = () => {
               <div className="flex flex-col items-center w-full justify-center md:mt-0 mt-12 max-w-[512px]">
                 <Reveal delay={0.5} direction="top">
                   <div className="w-full flex flex-col gap-6 items-center text-center leading-6">
-                    <a
+                    <span
                       href={project.link}
-                      className="md:text-2xl text-lg font-bold text-gray-800"
+                      className="md:text-2xl text-lg font-bold text-gray-800 dark:text-white"
                     >
                       {project.name}
-                    </a>
-                    <p className="text-gray-500 text-md font-medium">
+                    </span>
+                    <span className="text-gray-500 text-md font-medium dark:text-gray-400">
                       {project.description}
-                    </p>
+                    </span>
                     <div className="flex gap-4 flex-wrap justify-center">
                       {project.stack.map((stack, index) => (
-                        <p
+                        <span
                           key={index}
-                          className="text-gray-800 text-md font-bold"
+                          className="text-gray-800 text-md font-bold dark:text-white"
                         >
                           {stack}
-                        </p>
+                        </span>
                       ))}
                     </div>
 
@@ -140,7 +140,7 @@ const Projects = () => {
                           href={project.repo}
                           target="_blank"
                           rel="noreferrer"
-                          className="h-10 w-40 rounded-xl bg-black text-white hover:bg-gray-800 hover:shadow-lg active:bg-gray-900 transition-all duration-300 flex items-center justify-center"
+                          className="h-10 w-40 rounded-xl bg-black text-white hover:bg-gray-800 hover:shadow-lg active:bg-gray-900 transition-all duration-300 flex items-center justify-center dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:shadow-lg"
                         >
                           Repo
                           <FaGithub size={25} className="ml-2" />
@@ -151,7 +151,7 @@ const Projects = () => {
                           href={project.demo}
                           target="_blank"
                           rel="noreferrer"
-                          className="h-10 w-40 rounded-xl bg-black text-white hover:bg-gray-800 hover:shadow-lg active:bg-gray-900 transition-all duration-300 flex items-center justify-center"
+                          className="h-10 w-40 rounded-xl bg-black text-white hover:bg-gray-800 hover:shadow-lg active:bg-gray-900 transition-all duration-300 flex items-center justify-center dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:shadow-lg" 
                         >
                           Visitar
                           <RxOpenInNewWindow size={25} className="ml-2" />

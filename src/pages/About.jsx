@@ -9,19 +9,19 @@ const About = () => {
           <img
             src={pc2}
             alt="pc"
-            className="w-full max-w-[1000px] rounded-3xl mask-image-gradient"
+            className="w-full max-w-[1000px] rounded-3xl mask-image-gradients"
           />
-          <div className="lg:hidden block absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-white to-transparent"></div>
+          <div className="lg:hidden block absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-white to-transparent dark:from-gray-900"></div>
         </Reveal>
         <div className="flex flex-col justify-center md:justify-start w-full lg:pl-20">
           <Reveal delay={0.75}>
             <h1 className="text-lg font-[800] text-primary lg:pt-0 pt-4">
               Sobre mi
             </h1>
-            <p className="md:text-2xl text-lg font-bold text-gray-700 mb-4 mt-4">
+            <p className="md:text-2xl text-lg font-bold text-gray-700 mb-4 mt-4 dark:text-white duration-300">
               Con pasión, programar es más fácil
             </p>
-            <p className="text-base text-gray-500">
+            <p className="text-base text-gray-500 dark:text-gray-400 duration-300">
               Desde que era chico, me fascinó el mundo de la programación, lo
               que me llevó a elegir una escuela técnica especializada. Este
               camino me permitió descubrir mi verdadera pasión por el desarrollo
