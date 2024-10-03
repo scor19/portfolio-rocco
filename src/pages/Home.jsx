@@ -37,7 +37,7 @@ const Home = () => {
             <p className="text-lg w-full md:w-[450px] text-gray-500 my-5 md:text-left text-center cursor-default dark:text-gray-400 duration-300">
               Soy <span className="text-[#00A8E8]">Rocco</span>, un
               desarrollador front-end con experiencia en React, Node.js y
-              JavaScript.
+              TypeScript.
             </p>
             <div className="flex gap-4">
               <a
