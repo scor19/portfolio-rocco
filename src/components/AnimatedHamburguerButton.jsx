@@ -37,11 +37,11 @@ const AnimatedHamburguerButton = () => {
           initial={false}
           onClick={toggleMenu}
           animate={active ? "open" : "closed"}
-          className="relative z-10 h-20 w-20 rounded-full bg-white/0 transition-colors hover:bg-black/10 md:hidden"
+          className="relative z-10 h-20 w-20 rounded-full bg-white/0 transition-colors hover:bg-black/10 md:hidden dark:bg-gray-900/0 dark:hover:bg-white/10"
         >
           <motion.span
             style={{ top: "35%", left: "50%", x: "-50%", y: "-50%" }}
-            className="absolute h-1 w-10 bg-black"
+            className="absolute h-1 w-10 bg-black dark:bg-white"
             variants={{
               open: {
                 rotate: ["0deg", "0deg", "45deg"],
@@ -54,7 +54,7 @@ const AnimatedHamburguerButton = () => {
             }}
           />
           <motion.span
-            className="absolute h-1 w-10 bg-black"
+            className="absolute h-1 w-10 bg-black dark:bg-white"
             style={{ top: "50%", left: "50%", x: "-50%", y: "-50%" }}
             variants={{
               open: {
@@ -67,7 +67,7 @@ const AnimatedHamburguerButton = () => {
           />
           <motion.span
             style={{ bottom: "35%", left: "50%", x: "-50%", y: "50%" }}
-            className="absolute h-1 w-10 bg-black"
+            className="absolute h-1 w-10 bg-black dark:bg-white"
             variants={{
               open: {
                 rotate: ["0deg", "0deg", "45deg"],
@@ -88,7 +88,7 @@ const AnimatedHamburguerButton = () => {
           exit={{ opacity: 0, height: 0 }}
           className="absolute right-[80px] bottom-[-100px] overflow-hidden rounded-lg bg-gray-100 shadow-lg"
         >
-          <ul className="flex flex-col items-start gap-4 p-4 font-bold">
+          <ul className="flex flex-col items-start gap-4 p-4 font-bold dark:text-black">
             <li>
               <a href="#home" onClick={toggleMenu}>
                 Inicio
