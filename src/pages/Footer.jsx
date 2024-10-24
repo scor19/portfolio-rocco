@@ -19,7 +19,7 @@ const Footer = () => {
             <p className="text-gray-600 dark:text-gray-400">
               Si te gusta mi trabajo, o tenés ideas para un proyecto,
               <br />
-              Sentite libre de contactarme a traves de mis redes, o mediante
+              sentite libre de contactarme a traves de mis redes, o mediante
               email.
             </p>
             <ul className="gap-4 font-bold flex items-center dark:text-white">
