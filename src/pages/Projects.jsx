@@ -19,14 +19,7 @@ const Projects = () => {
       name: "Schedule Time App",
       description:
         "Schedule Time App es una aplicación móvil diseñada para médicos que permite gestionar los turnos de sus pacientes. Con una interfaz intuitiva, facilita la organización de citas, el seguimiento del historial médico de cada paciente y la optimización del tiempo de consulta. Cuenta con una versión en Firebase y una en MySQL",
-      stack: [
-        "React Native",
-        "MySQL",
-        "Node.js",
-        "Express",
-        "JWT",
-        "Styled Components",
-      ],
+      stack: ["React Native", "MySQL", "Node.js", "Express", "JWT"],
       repo: "https://github.com/scor19/simple-turn-app",
       demo: "",
       images: [ScrSTA1, ScrSTA2, ScrSTA3, ScrSTA4],
@@ -36,12 +29,7 @@ const Projects = () => {
       name: "Cocktails App",
       description:
         "Cocktails App es un proyecto personal que se realizó en React Native, utilizando TypeScript. Se utilizó la API de TheCocktailDB para obtener los datos de los diferentes tipos de bebidas, como ingredientes e instrucciones para prepararlos. Cuenta con una barra de busqueda y un filtro de bebidas según si contienen o no alcohol. También tiene una pestaña de favoritos, los cuales se guardan localmente en Async Storage.",
-      stack: [
-        "React Native",
-        "TypeScript",
-        "Async Storage",
-        "Styled Components",
-      ],
+      stack: ["React Native", "TypeScript", "Async Storage"],
       repo: "https://github.com/scor19/cocktails-react-native-expo",
       demo: "",
       images: [Cocktails1, Cocktails2, Cocktails3, Cocktails4, Cocktails5],
@@ -151,7 +139,7 @@ const Projects = () => {
                           href={project.demo}
                           target="_blank"
                           rel="noreferrer"
-                          className="h-10 w-40 rounded-xl bg-black text-white hover:bg-gray-800 hover:shadow-lg active:bg-gray-900 transition-all duration-300 flex items-center justify-center dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:shadow-lg" 
+                          className="h-10 w-40 rounded-xl bg-black text-white hover:bg-gray-800 hover:shadow-lg active:bg-gray-900 transition-all duration-300 flex items-center justify-center dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:hover:shadow-lg"
                         >
                           Visitar
                           <RxOpenInNewWindow size={25} className="ml-2" />

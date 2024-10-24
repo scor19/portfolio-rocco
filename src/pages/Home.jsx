@@ -19,7 +19,7 @@ const Home = () => {
           <div>
             <Reveal>
               <h1 className="font-[800] text-5xl w-full md:w-[500px] leading-[60px] md:text-left text-center shrink-0 dark:text-white duration-300 cursor-default">
-                Front-End React
+                Full-Stack React
               </h1>
             </Reveal>
             <div className="flex items-center justify-center md:justify-start">
@@ -36,8 +36,8 @@ const Home = () => {
             </div>
             <p className="text-lg w-full md:w-[450px] text-gray-500 my-5 md:text-left text-center cursor-default dark:text-gray-400 duration-300">
               Soy <span className="text-[#00A8E8]">Rocco</span>, un
-              desarrollador front-end con experiencia en React, Node.js y
-              JavaScript.
+              desarrollador full-stack con experiencia en React, Node.js y
+              TypeScript.
             </p>
             <div className="flex gap-4">
               <a
