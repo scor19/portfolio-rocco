@@ -6,8 +6,9 @@ import Reveal from "../components/Reveal";
 import AnimatedImage from "../components/AnimatedImage";
 import Footer from "./Footer";
 import ScrollProgress from "../components/ScrollProgress";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaCloudDownloadAlt } from "react-icons/fa";
 import Fade from "../components/Fade";
+import Curriculum from "../assets/CV-Rocco-Bazo.pdf";
 
 const Home = () => {
   return (
@@ -39,30 +40,48 @@ const Home = () => {
               desarrollador full-stack con experiencia en React, Node.js y
               TypeScript.
             </p>
-            <div className="flex gap-4">
-              <a
-                href="https://www.linkedin.com/in/rocco-bazo/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin
-                  size={40}
-                  className={
-                    "text-black dark:text-white hover:text-[#00A8E8] dark:hover:text-[#00A8E8] duration-300 hover:cursor-pointer"
-                  }
-                />
-              </a>
-              <a
-                href="https://github.com/scor19"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub
-                  size={40}
-                  className={
-                    "text-black dark:text-white hover:text-gray-400 dark:hover:text-gray-600 duration-300 hover:cursor-pointer"
-                  }
-                />
+            <div className="flex items-center justify-between md:justify-start gap-4 md:mb-0 mb-4">
+              <div className="flex gap-4">
+                <a
+                  href="https://www.linkedin.com/in/rocco-bazo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin
+                    size={40}
+                    className={
+                      "text-black dark:text-white hover:text-[#00A8E8] dark:hover:text-[#00A8E8] duration-300 hover:cursor-pointer hover:scale-110"
+                    }
+                  />
+                </a>
+                <a
+                  href="https://github.com/scor19"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub
+                    size={40}
+                    className={
+                      "text-black dark:text-white hover:text-gray-400 dark:hover:text-gray-600 duration-300 hover:cursor-pointer hover:scale-110"
+                    }
+                  />
+                </a>
+              </div>
+              <a href={Curriculum} download>
+                <div className="flex gap-2 items-center border-2 border-black dark:border-white rounded-full px-4 cursor-default duration-300 hover:cursor-pointer hover:bg-gray-200 hover:scale-105">
+                  <FaCloudDownloadAlt
+                    size={40}
+                    className={
+                      "text-black dark:text-white duration-300 hover:cursor-pointer"
+                    }
+                  />
+                  <span className="text-black dark:text-white cursor-default duration-300 hover:cursor-pointer md:hidden block ">
+                    CV
+                  </span>
+                  <span className="text-black dark:text-white cursor-default duration-300 hover:cursor-pointer hidden md:block">
+                    Curriculum
+                  </span>
+                </div>
               </a>
             </div>
           </div>
